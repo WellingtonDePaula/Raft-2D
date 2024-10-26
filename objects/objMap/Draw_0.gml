@@ -1,8 +1,9 @@
-for(var i = 0; i < cellVAmount; i++) {
-	for(var j = 0; j < cellHAmount; j++) {
-		draw_sprite(sprFrame, 0, 0 + (cellWidth*j), 0 + (cellHeight*i));
-		if(point_in_rectangle(mouse_x, mouse_y, j*cellWidth+1, i*cellHeight+1, (j*cellWidth)+cellWidth, (i*cellHeight)+cellHeight)) {
-			draw_sprite(sprSelector, 0, 0 + (cellWidth*j), 0 + (cellHeight*i));
+for(var i = 0; i < cellHAmount; i++) {
+	for(var j = 0; j < cellVAmount; j++) {
+		draw_text_transformed(i * cellWidth, j * cellHeight, global.grid[# i, j], .3, .3, 0);
+		draw_rectangle(i * cellWidth, j * cellHeight, i * cellWidth + cellWidth - 1, j * cellHeight + cellHeight - 1, true);
+		if(point_in_rectangle(mouse_x, mouse_y, i*cellWidth+1, j*cellHeight+1, (i*cellWidth)+cellWidth, (j*cellHeight)+cellHeight)) {
+			draw_rectangle(i * cellWidth, j * cellHeight, i * cellWidth + cellWidth - 1, j * cellHeight + cellHeight - 1, false);
 		}
 	}
 }

@@ -13,3 +13,10 @@ function playerMove() {
 	
 	return [keys, moveDir];
 }
+
+function verifyPlayerSurface() {
+	var horizontalIndex, verticalIndex;
+	horizontalIndex = x div ds_grid_width(global.grid);
+	verticalIndex = y div ds_grid_height(global.grid);
+	
+}
