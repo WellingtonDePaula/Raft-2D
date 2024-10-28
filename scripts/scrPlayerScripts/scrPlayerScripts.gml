@@ -15,8 +15,27 @@ function playerMove() {
 }
 
 function verifyPlayerSurface() {
-	var horizontalIndex, verticalIndex;
-	horizontalIndex = x div ds_grid_width(global.grid);
-	verticalIndex = y div ds_grid_height(global.grid);
-	
+	var hor = x div objMap.cellWidth;
+	var ver = y div objMap.cellHeight;
+	var type = ds_grid_get(global.grid, hor, ver);
+	if(typeof(type) == "ref") {
+		return type.type;
+	} else {
+		return type;
+	}
+}
+
+function groundChange(ground, isIdle) {
+	if(isIdle) {
+		
+	} else {
+		switch(ground) {
+			case "solid":
+				state = scrPlayerStateMovingSolid;
+				break;
+			case "water":
+			state = scrPlayerStateMovingWater;
+			break;
+		}
+	}
 }

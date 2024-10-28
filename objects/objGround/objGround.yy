@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"objPlatform",
+  "%Name":"objGround",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objPlatform",
+  "name":"objGround",
   "overriddenProperties":[],
   "parent":{
     "name":"Assets",
     "path":"folders/Objetos/Assets.yy",
   },
-  "parentObjectId":{
-    "name":"objGround",
-    "path":"objects/objGround/objGround.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sprPlatform",
-    "path":"sprites/sprPlatform/sprPlatform.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

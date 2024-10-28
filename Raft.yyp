@@ -45,6 +45,7 @@
   "resources":[
     {"id":{"name":"objEntity","path":"objects/objEntity/objEntity.yy",},},
     {"id":{"name":"objGame","path":"objects/objGame/objGame.yy",},},
+    {"id":{"name":"objGround","path":"objects/objGround/objGround.yy",},},
     {"id":{"name":"objMap","path":"objects/objMap/objMap.yy",},},
     {"id":{"name":"objPlatform","path":"objects/objPlatform/objPlatform.yy",},},
     {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},},
