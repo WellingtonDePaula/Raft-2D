@@ -8,3 +8,5 @@ velh = 0;
 velv = 0;
 
 ground = -1;
+
+inv = -1;

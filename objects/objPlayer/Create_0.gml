@@ -1,6 +1,6 @@
 event_inherited();
 
-state = scrPlayerStateIdle;
+state = scrPlayerStateIdleSolid;
 
 vel = 1;
 
@@ -10,3 +10,8 @@ inputs = {
 	down: ord("S"),
 	up: ord("W"),
 }
+
+invSlots = 3;
+invSelected = 0;
+inv = array_create(invSlots, [noone, sprNoone, 0]);
+array_set(inv, 0, [objHammer, sprHammer, 20]);

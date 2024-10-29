@@ -1,4 +1,4 @@
-function scrPlayerStateIdle() {
+function scrPlayerStateIdleSolid() {
 	stateDebug = "Idle";
 	
 	ground = verifyPlayerSurface();
@@ -36,7 +36,7 @@ function scrPlayerStateMovingSolid() {
 	#endregion
 	
 	if(keys == 0) {
-		state = scrPlayerStateIdle;
+		state = scrPlayerStateIdleSolid;
 	}
 }
 
@@ -57,6 +57,27 @@ function scrPlayerStateMovingWater() {
 	#endregion
 	
 	if(keys == 0) {
-		state = scrPlayerStateIdle;
+		state = scrPlayerStateIdleWater;
+	}
+}
+
+function scrPlayerStateIdleWater() {
+	stateDebug = "IdleWater";
+	
+	ground = verifyPlayerSurface();
+	groundChange(ground, true);
+	
+	#region movement code
+	
+	var arr = playerMove();
+	var keys = arr[0];
+	var moveDir = arr[1];
+	velh = 0;
+	velv = 0;
+	
+	#endregion
+	
+	if(keys != 0) {
+		state = scrPlayerStateMovingSolid;
 	}
 }

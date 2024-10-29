@@ -27,15 +27,22 @@ function verifyPlayerSurface() {
 
 function groundChange(ground, isIdle) {
 	if(isIdle) {
-		
+		switch(ground) {
+			case "solid":
+				state = scrPlayerStateIdleSolid;
+				break;
+			case "water":
+				state = scrPlayerStateIdleWater;
+				break;
+		}
 	} else {
 		switch(ground) {
 			case "solid":
 				state = scrPlayerStateMovingSolid;
 				break;
 			case "water":
-			state = scrPlayerStateMovingWater;
-			break;
+				state = scrPlayerStateMovingWater;
+				break;
 		}
 	}
 }
