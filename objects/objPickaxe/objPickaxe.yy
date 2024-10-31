@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"objHammer",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"objPickaxe",
+  "eventList":[],
   "managed":true,
-  "name":"objHammer",
+  "name":"objPickaxe",
   "overriddenProperties":[],
   "parent":{
     "name":"Tools",
@@ -34,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprHammer",
-    "path":"sprites/sprHammer/sprHammer.yy",
+    "name":"sprPickaxe",
+    "path":"sprites/sprPickaxe/sprPickaxe.yy",
   },
   "spriteMaskId":null,
   "visible":true,

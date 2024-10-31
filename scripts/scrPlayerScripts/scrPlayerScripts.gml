@@ -46,3 +46,37 @@ function groundChange(ground, isIdle) {
 		}
 	}
 }
+
+function changeHotbar() {
+	for(var i = 0; i < invSlots; i++) {
+		if(keyboard_lastchar == inputs.hotbarKeys[i]) {
+			slotSelected = keyboard_lastchar-1;
+			if(typeof(inv[i][0]) == "ref") {
+				if(inv[i][2] == "tool") {
+					changeTool(inv[i][0], inv[i][1]);
+				}
+			} else {
+				if(typeof(tool) == "ref") {
+					instance_destroy(tool);
+					tool = -1;
+				}
+			}
+			keyboard_lastchar = "";
+		}
+	}
+}
+
+function changeTool(object, durability) {
+	if(tool == -1) {
+		tool = instance_create_layer(x, y, "Tools", object);
+		tool.durability = durability;
+		tool.invId = self;
+	} else {
+		if(tool.object_index != object) {
+			instance_destroy(tool);
+			tool = instance_create_layer(x, y, "Tools", object);
+			tool.durability = durability;
+			tool.invId = self;
+		}
+	}
+}

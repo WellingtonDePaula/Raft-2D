@@ -14,6 +14,10 @@ function scrPlayerStateIdleSolid() {
 	
 	#endregion
 	
+	#region change Slot from Hotbar
+	changeHotbar();
+	#endregion
+	
 	if(keys != 0) {
 		state = scrPlayerStateMovingSolid;
 	}
@@ -33,6 +37,10 @@ function scrPlayerStateMovingSolid() {
 	var keys = arr[0];
 	var moveDir = arr[1];
 	
+	#endregion
+	
+	#region change Slot from Hotbar
+	changeHotbar();
 	#endregion
 	
 	if(keys == 0) {
@@ -56,6 +64,10 @@ function scrPlayerStateMovingWater() {
 	
 	#endregion
 	
+	#region change Slot from Hotbar
+	changeHotbar();
+	#endregion
+	
 	if(keys == 0) {
 		state = scrPlayerStateIdleWater;
 	}
@@ -75,6 +87,10 @@ function scrPlayerStateIdleWater() {
 	velh = 0;
 	velv = 0;
 	
+	#endregion
+	
+	#region change Slot from Hotbar
+	changeHotbar();
 	#endregion
 	
 	if(keys != 0) {

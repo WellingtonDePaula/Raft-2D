@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrHammerStates",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrHammerStates",
+  "parent":{
+    "name":"Hammer",
+    "path":"folders/Scripts/Tools/Hammer.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
