@@ -16,6 +16,12 @@ function toolChasePlayer() {
 	x = invId.x;
 	y = invId.y;
 	
-	toolX = x + lengthdir_x(7, dir);
-	toolY = y + lengthdir_y(1, dir);
+	image_xscale = invId.image_xscale;
+	
+	toolX = x + (xDistFromPlayer * invId.image_xscale);
+	toolY = y + yDistFromPlayer;
+}
+
+function useTool() {
+	if(point_in_circle(mouse_x, mouse_y, ))
 }

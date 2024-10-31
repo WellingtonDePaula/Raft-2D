@@ -3,7 +3,5 @@ event_inherited();
 maxDurability = 20;
 durability = maxDurability;
 
-xDistFromPlayer = 7;
+xDistFromPlayer = 6;
 yDistFromPlayer = 1;
-
-distToUse = 4;

@@ -18,6 +18,10 @@ function scrPlayerStateIdleSolid() {
 	changeHotbar();
 	#endregion
 	
+	#region sprites code
+	checkSpriteDirection();
+	#endregion
+	
 	if(keys != 0) {
 		state = scrPlayerStateMovingSolid;
 	}
@@ -41,6 +45,10 @@ function scrPlayerStateMovingSolid() {
 	
 	#region change Slot from Hotbar
 	changeHotbar();
+	#endregion
+	
+	#region sprites code
+	checkSpriteDirection();
 	#endregion
 	
 	if(keys == 0) {
@@ -68,6 +76,10 @@ function scrPlayerStateMovingWater() {
 	changeHotbar();
 	#endregion
 	
+	#region sprites code
+	checkSpriteDirection();
+	#endregion
+	
 	if(keys == 0) {
 		state = scrPlayerStateIdleWater;
 	}
@@ -91,6 +103,10 @@ function scrPlayerStateIdleWater() {
 	
 	#region change Slot from Hotbar
 	changeHotbar();
+	#endregion
+	
+	#region sprites code
+	checkSpriteDirection();
 	#endregion
 	
 	if(keys != 0) {

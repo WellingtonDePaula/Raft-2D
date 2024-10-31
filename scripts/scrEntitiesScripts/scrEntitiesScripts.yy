@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"scrPickaxeStates",
+  "%Name":"scrEntitiesScripts",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scrPickaxeStates",
+  "name":"scrEntitiesScripts",
   "parent":{
-    "name":"Pickaxe",
-    "path":"folders/Scripts/Tools/Pickaxe.yy",
+    "name":"Entities",
+    "path":"folders/Scripts/Entities.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

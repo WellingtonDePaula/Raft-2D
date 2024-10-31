@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"scrPickaxeStates",
+  "%Name":"scrHammerScripts",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scrPickaxeStates",
+  "name":"scrHammerScripts",
   "parent":{
-    "name":"Pickaxe",
-    "path":"folders/Scripts/Tools/Pickaxe.yy",
+    "name":"Hammer",
+    "path":"folders/Scripts/Tools/Hammer.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
