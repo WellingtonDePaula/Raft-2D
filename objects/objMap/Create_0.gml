@@ -4,6 +4,8 @@ cellHeight = 32;
 cellHAmount = room_width div cellWidth;
 cellVAmount = room_height div cellHeight;
 
+global.canDrawGrid = false;
+
 global.grid = ds_grid_create(cellHAmount, cellVAmount);
 ds_grid_set_region(global.grid, 0, 0, cellHAmount, cellVAmount, "water");
 

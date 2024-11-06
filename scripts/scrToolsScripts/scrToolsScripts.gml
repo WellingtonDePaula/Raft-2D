@@ -22,6 +22,10 @@ function toolChasePlayer() {
 	toolY = y + yDistFromPlayer;
 }
 
-function useTool() {
-	if(point_in_circle(mouse_x, mouse_y, ))
+function useTool(toolId) {
+	switch(toolId) {
+		case "hammer":
+			
+			break;
+	}
 }

@@ -5,3 +5,5 @@ durability = maxDurability;
 
 xDistFromPlayer = 6;
 yDistFromPlayer = 1;
+
+distToUse = 1*32;

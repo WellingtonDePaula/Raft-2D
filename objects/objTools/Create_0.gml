@@ -4,7 +4,10 @@ debugState = "";
 maxDurability = 0;
 durability = 0;
 damage = 0;
+canUse = true;
 invId = -1;
+
+cooldown = 0;
 
 type = "tool";
 

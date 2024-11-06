@@ -10,6 +10,7 @@ inputs = {
 	down: ord("S"),
 	up: ord("W"),
 	hotbarKeys: [1, 2, 3],
+	use: mb_left,
 }
 
 invSlots = 3;
